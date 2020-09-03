@@ -1,66 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>http://rebootcat.com/wiki/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/cmake/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/scons_build_cplusplus/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/scons2/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/scons3/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/scons4/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/auto_run_aliyun_spot/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/scon1/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/scons5/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/scons6/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/scons7/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/scons8/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
+    </url><url>
      <loc>http://rebootcat.com/wiki/scons9/</loc>
      <lastmod>2020-09-03</lastmod>
      <changefreq>daily</changefreq>
