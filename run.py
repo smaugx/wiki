@@ -54,8 +54,8 @@ def run():
     cmd = 'git add --all . && git commit -m "update mkdocs site" && git push'
     print(cmd)
     r = os.popen(cmd).readlines()
-    print(r)
-
+    for ritem in r:
+        print(ritem)
 
 
     
