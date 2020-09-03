@@ -17,11 +17,7 @@ def run():
         return
 
     nav_item_list = []
-    for nitem in data['nav']:
-        for k,v in nitem.items():
-            # k is show name , v is file name  ,{'Home': 'index.md'}
-            nav_item_list.append(v)
-            break
+    data['nav'] = []  # clear old nav items
     docs_dir = data.get('docs_dir') or 'docs'
     site_dir = data.get('site_dir') or 'site'
 

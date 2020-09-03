@@ -7,20 +7,8 @@ extra:
 markdown_extensions:
 - admonition
 nav:
-- Home: index.md
-- Cmake: cmake.md
-- Scons: scons_build_cplusplus.md
-- Scons2: scons2.md
-- Scons3: scons3.md
-- Scons4: scons4.md
-- auto-run-aliyun-spot: auto_run_aliyun_spot.md
-- scon1: scon1.md
-- scons5: scons5.md
-- scons6: scons6.md
-- scons7: scons7.md
-- scons8: scons8.md
-- scons9: scons9.md
 - python: python.md
+- index: index.md
 - rsync: rsync.md
 - git: git.md
 repo_url: https://github.com/smaugx/wiki
