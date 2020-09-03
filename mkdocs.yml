@@ -13,6 +13,9 @@ theme:
   search_index_only: true
   include_search_page: true
 
+docs_dir: source
+
+site_dir: docs
 
 nav:
     - Home: 'index.md'
