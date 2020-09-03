@@ -2,7 +2,7 @@ site_name: My Wiki
 site_url: http://rebootcat.com/wiki
 site_author: smaugx
 site_description: "my wiki"
-repo_url: "https://github.com/smaugx/wiki.git"
+repo_url: "https://github.com/smaugx/wiki"
 copyright: "this is copyright"
 
 theme:
