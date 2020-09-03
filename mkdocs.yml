@@ -20,6 +20,9 @@ nav:
 - scons7: scons7.md
 - scons8: scons8.md
 - scons9: scons9.md
+- python: python.md
+- rsync: rsync.md
+- git: git.md
 repo_url: https://github.com/smaugx/wiki
 site_author: smaugx
 site_description: my wiki
