@@ -33,6 +33,8 @@
         
         var pageToc = [
           {title: "rsync \u7684\u64cd\u4f5c", url: "#_top", children: [
+              {title: "\u672c\u673a\u76ee\u5f55\u540c\u6b65", url: "#_1" },
+              {title: "\u8fdc\u7a0b\u673a\u5668\u540c\u6b65", url: "#_2" },
           ]},
         ];
 
@@ -59,20 +61,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../git/" class="btn btn-xs btn-default pull-right">
+      <a href="../other/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../git/" class="btn btn-xs btn-link">
-        git
+      <a href="../other/" class="btn btn-xs btn-link">
+        其他
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href=".." class="btn btn-xs btn-default pull-left">
+      <a href="../python/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href=".." class="btn btn-xs btn-link">
-        index
+        Previous</a><a href="../python/" class="btn btn-xs btn-link">
+        python
       </a>
     </div>
     
@@ -81,6 +83,21 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     <h1 id="rsync">rsync 的操作</h1>
+<h2 id="_1">本机目录同步</h2>
+<pre><code>rsync  -rptgoDvH --delete --exclude &quot;cbuild&quot; --exclude &quot;cbuild_release&quot; --exclude &quot;libs&quot; /root/top/mux/ /mnt/centos-share/top/mux/
+</code></pre>
+
+<p>上面的命令会把 <code>/root/top/mux</code> 同步到 <code>/mnt/centos-share/top/mux</code>，并且忽略掉 <code>cbuild</code> <code>cbuild_release</code> <code>libs</code> 目录。</p>
+<p>这个命令我经常会用，在本地 mac host 和 virtual-host centos 之间同步文件。</p>
+<pre><code>alias syncmac='rsync  -rptgoDvH --delete --exclude &quot;cbuild&quot; --exclude &quot;cbuild_release&quot; --exclude &quot;libs&quot; /root/top/mux/ /mnt/centos-share/top/mux/'
+</code></pre>
+
+<p>直接使用 <code>syncmac</code> 命令就行了。</p>
+<h2 id="_2">远程机器同步</h2>
+<pre><code>rsync  -avHe  &quot;ssh -p 1022 -i /root/.ssh/xxxx.pem&quot; root@8.8.8.8::dashdb /root/smaug/temp/
+</code></pre>
+
+<p>上面会把远程机器的  dashdb 目录同步到 temp 目录下。</p>
 
   <br>
     
@@ -93,20 +110,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../git/" class="btn btn-xs btn-default pull-right">
+      <a href="../other/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../git/" class="btn btn-xs btn-link">
-        git
+      <a href="../other/" class="btn btn-xs btn-link">
+        其他
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href=".." class="btn btn-xs btn-default pull-left">
+      <a href="../python/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href=".." class="btn btn-xs btn-link">
-        index
+        Previous</a><a href="../python/" class="btn btn-xs btn-link">
+        python
       </a>
     </div>
     

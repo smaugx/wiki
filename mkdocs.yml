@@ -7,10 +7,11 @@ extra:
 markdown_extensions:
 - admonition
 nav:
-- python: python.md
-- index: index.md
-- rsync: rsync.md
+- Home: index.md
 - git: git.md
+- python: python.md
+- rsync: rsync.md
+- "\u5176\u4ED6": other.md
 repo_url: https://github.com/smaugx/wiki
 site_author: smaugx
 site_description: my wiki

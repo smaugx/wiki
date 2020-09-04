@@ -33,6 +33,7 @@
         
         var pageToc = [
           {title: "\u4e00\u4e9b python \u64cd\u4f5c", url: "#_top", children: [
+              {title: "\u4e00\u952e\u5b89\u88c5 python3", url: "#python3" },
           ]},
         ];
 
@@ -59,12 +60,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href=".." class="btn btn-xs btn-default pull-right">
+      <a href="../rsync/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href=".." class="btn btn-xs btn-link">
-        index
+      <a href="../rsync/" class="btn btn-xs btn-link">
+        rsync
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../git/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../git/" class="btn btn-xs btn-link">
+        git
       </a>
     </div>
     
@@ -73,6 +82,23 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     <h1 id="python">一些 python 操作</h1>
+<h2 id="python3">一键安装 python3</h2>
+<pre><code>yum -y install wget &amp;&amp;  
+yum -y groupinstall &quot;Development tools&quot; &amp;&amp;  
+yum -y install zlib-devel libffi-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel &amp;&amp;  
+wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz &amp;&amp;  
+mkdir  /opt/python3 &amp;&amp;  
+tar -xvJf  Python-3.7.2.tar.xz &amp;&amp;  
+cd Python-3.7.2 &amp;&amp;  
+./configure --prefix=/opt/python3 &amp;&amp;  
+make &amp;&amp;  
+make install
+
+ln -s /opt/python3/bin/python3 /usr/bin/python37
+ln -s /opt/python3/bin/pip3 /usr/bin/pip3
+yum -y install epel-release &amp;&amp;  
+yum -y install python-pip
+</code></pre>
 
   <br>
     
@@ -85,12 +111,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href=".." class="btn btn-xs btn-default pull-right">
+      <a href="../rsync/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href=".." class="btn btn-xs btn-link">
-        index
+      <a href="../rsync/" class="btn btn-xs btn-link">
+        rsync
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../git/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../git/" class="btn btn-xs btn-link">
+        git
       </a>
     </div>
     
