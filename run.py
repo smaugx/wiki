@@ -14,7 +14,6 @@ def run():
         print("load mkdocs.yml error")
         return
 
-    print(data)
     nav_item_list = []
     data['nav'] = []  # clear old nav items
     docs_dir = data.get('docs_dir') or 'docs'
@@ -51,21 +50,23 @@ def run():
 
     with open('./mkdocs.yml', 'w') as fout:
         fout.write(yaml.dump(data))
+        print("{0} begin dump mkdocs.yml {1}".format("#" * 15, "#" * 15))
         print(yaml.dump(data))
         fout.close()
-    print("\nupdate mkdocs.yml done")
+    print("{0} update mkdocs.yml done {1}\n".format("#" * 15, "#" * 15))
 
     cmd = 'mkdocs build'
-    print(cmd)
+    print("{0} begin {1} {2}".format("#" * 15, cmd, "#" * 15))
     os.popen(cmd).readlines()
-    print("mkdocs build done in dir:{0}".format(site_dir))
+    print("{0} mkdocs build done in dir:{1} {2}\n".format("#" * 15, site_dir, "#" * 15))
 
     cmd = 'git add --all . && git commit -m "update mkdocs site" && git push'
     cmd = 'ls'
-    print(cmd)
+    print("{0} begin git push:{1} {2}".format("#" * 15, cmd, "#" * 15))
     r = os.popen(cmd).readlines()
     for ritem in r:
         print(ritem),
+    print("{0} git push done {1}\n".format("#" * 15, "#" * 15))
 
 
     
