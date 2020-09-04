@@ -1,4 +1,4 @@
-copyright: this is copyright
+copyright: "Copyright \xA9 2020 smaug"
 docs_dir: source
 extra:
   article_nav_bottom: true
@@ -14,9 +14,9 @@ nav:
 - "\u5176\u4ED6": other.md
 repo_url: https://github.com/smaugx/wiki
 site_author: smaugx
-site_description: my wiki
+site_description: "MyWiki|\u6797\u5915\u6C34\u5171"
 site_dir: docs
-site_name: My Wiki
+site_name: "MyWiki|\u6797\u5915\u6C34\u5171"
 site_url: http://rebootcat.com/wiki
 theme:
   custom_dir: mkdocs_windmill
