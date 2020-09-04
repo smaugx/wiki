@@ -61,7 +61,6 @@ def run():
     print("{0} mkdocs build done in dir:{1} {2}\n".format("#" * 15, site_dir, "#" * 15))
 
     cmd = 'git add --all . && git commit -m "update mkdocs site" && git push'
-    cmd = 'ls'
     print("{0} begin git push:{1} {2}".format("#" * 15, cmd, "#" * 15))
     r = os.popen(cmd).readlines()
     for ritem in r:
