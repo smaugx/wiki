@@ -8,9 +8,9 @@ markdown_extensions:
 - admonition
 nav:
 - Home: index.md
-- git: git.md
 - python: python.md
 - rsync: rsync.md
+- git: git.md
 - "\u5176\u4ED6": other.md
 repo_url: https://github.com/smaugx/wiki
 site_author: smaugx
