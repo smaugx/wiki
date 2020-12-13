@@ -33,4 +33,4 @@ jobs:
         key: ${{ secrets.BLOG_DEPLOY_PRI_KEY }}
         # 重启的脚本，根据自身情况做相应改动，一般要做的是migrate数据库以及重启服务器
         script: |
-          echo "update rebootcat.com/wiki blog" >> /tmp/github/blog.log
+          echo "update rebootcat.com/wiki blog" >> /tmp/rebootblog.log
